@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    /* Your container styles... */
+    scroll-snap-type: y mandatory;
+    border: 2px solid black;
+    border-width: 2px;
+    margin: 0 auto; /* To center the container */
+    
+
+
+}
+section{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align:start;
+    text-align: center;
+}
+
+.navbar{
+width: 100%;
+display: flex;
+align-items: center;
+
+
+}
+.title {
+    text-align: center;
+    background-color: white; /* Background color for the title area */
+    padding: 4px; /* Add padding to create space around the title */
+}
+
+.title h1 {
+    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* Additional styling for the title text if needed */
+}
+body {
+    margin: 20px; /* Adjust the margin to control the width of the border */
+    border: 2px solid black;
+    border-width: 0px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 0px;
+    margin-top: 20px;
+
+}
+nav ul li a{
+    padding: 20px;
+text-decoration: none;
+color: #000;
+font-size:18px ;
+width: 50px;
+}
+h1{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+nav ul li a:hover{
+    background-color: #000;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+
+}
+.col-1 p{
+    font-size: 30px;
+
+}
+button {
+    font-size: 18px;
+    width: 120px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background:linear-gradient(to right,#000,#000);
+    border-radius: 6px ;
+    cursor: pointer;
+    transition: width 10.5 ;
+}
+button img{
+    margin-left: 40px;
+    width: 60px;
+    display: none;
+
+}
+button:hover img{
+    display: block;
+
+}
+button:hover{
+    width: 160px;
+}
+
+
+
+
+/*   Scrolling animations and shitr    */
+
+.About{
+    background-color: white;
+}
+
+/*about section*/
+    
+#about p{
+    padding-left: 50%;
+    text-align: center;
+}
